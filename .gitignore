@@ -13,6 +13,7 @@
 target/
 .idea
 .git
+*.iml
 
 # Package Files #
 *.jar
