@@ -3,7 +3,7 @@ package com.demo.shoppingcart.discount;
 public class Slab {
     private long minLimit, maxLimit;
     private int discount;
-    CustomerTypeEnum customerTypeEnum;
+    private CustomerTypeEnum customerTypeEnum;
 
     public long getMinLimit() {
         return minLimit;
