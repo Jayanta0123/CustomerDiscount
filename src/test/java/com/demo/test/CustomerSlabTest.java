@@ -1,10 +1,20 @@
 package com.demo.test;
 
 import com.demo.shoppingcart.discount.Calculation;
+import com.demo.shoppingcart.discount.CustomerTypeEnum;
+import com.demo.shoppingcart.discount.SlabsData;
 import org.junit.Assert;
+import org.junit.BeforeClass;
 import org.junit.Test;
 
 public class CustomerSlabTest {
+
+    // print this before the tests execute
+    @BeforeClass
+    public static void printSlabsData() {
+        SlabsData.printSlabs(CustomerTypeEnum.PREMIUM);
+        SlabsData.printSlabs(CustomerTypeEnum.REGULAR);
+    }
 
     // First 10 unit-tests tests the equality of the calculated and the provided value
     @Test
